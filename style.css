@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width:100%;
+    height: auto;
+}
+
+details summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 20px 0;
+    cursor: pointer;
+    color: hsl(292, 42%, 14%);
+    font-weight: 500;
+}
+
+details:hover summary {
+    color:  rgb(208, 90, 208);
+}
+
+details p{
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+}
+
+main {
+    background-color: white;
+    padding: 30px;
+    max-width:550px;
+    min-width:300px;
+    height: auto;   
+    border-radius: 10px;
+}
+
+main .wrapper {
+    width: 100%;
+}
+
+.wrapper h1 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.wrapper h1 img {
+    width: 24px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(images/background-pattern-desktop.svg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color:  hsl(275, 100%, 97%);
+}
+
+@media(max-width:600px) {
+    body{
+        background-image: url(images/background-pattern-mobile.svg);
+        background-position: top;
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
+    main{
+        margin: 0 10px;
+    }
+}
+
+.background-wrapper {
+    min-width: 100%;
+}
+
